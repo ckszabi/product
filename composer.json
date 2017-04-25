@@ -1,0 +1,11 @@
+{
+	"name": "AWS testing",
+	"description": "Main project",
+	"type": "Testproject",
+	"require": {
+
+	},
+	"require-dev": {
+		"phpunit/phpunit": "5.7"
+	}
+}

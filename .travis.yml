@@ -1,0 +1,17 @@
+language: php
+php:
+- '5.6'
+install:
+- composer install
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: AKIAIWL2O3OTAQ5LSBVQ
+  secret_access_key:
+    secure: Q363auR55sK9XHuCa/8PwL7EOwrO/hkR8IXjcHetpVCSn1IYgEAmhmWctLdV6WkHvOwL91BEWR+5VLn6JvKAn6pbmvUNhzmqSlYb+8rIXqCKWGJxLqAuDndD1KWLYde2BpVKKt48vxSgMM0RAYEd2nknRE7uqgyq1qERg2U9g/Wa+kqLJuga/xOe5gvQ+xOvCAXplWubHy86BP7KJfYckJmw3wORqWYRFOda9ITPYyX9HJwQiRJzFLJUhQVj4g1S7krMj7pkR1i1jra8FINBu1kdk8frYBM4gMhAU7kwCGsNBe7m2cwqMFIxdPBuKqn0PYLzMT60pSKsHUMbG1uKuM1bMRS2KLsvqMj8UA4wCQAirezXbRFKeagqeEasI+4DBHc3h63Zv6sn975sgbk40BChH5rihQqThMd6Ub3UEEP+91Df/K1LJr0hZsYpxmKBqyKhx1YRmyTiCpbqxPQ0curSYySVCvvfJvKTwQ8uU+RsWhNzyYo3bctULWtdRx/fesWUSzPEllPlnpomqeZ/Z4Z5jJ0jdDAIUm5BU+dOPczR534uLl6rNzKMkb9i/jPKLo4trBrgi0wG+8QIgeftJjkzgU9AIFt+uMkbH0Bv4dFJdI4exxmN6LOg2JmZfO1N6N8/WQN8wxQI6THDXSI2KsZnmO8PYayIfd++DXOmjsM=
+  region: eu-west-1
+  app: Product
+  env: LowCost-env
+  bucket_name: "travis-deploy-awstest"
+  on:
+    repo: ckszabi/product
+    branch: master
