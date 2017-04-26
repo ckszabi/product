@@ -3,7 +3,7 @@ php:
 - '5.6'
 install:
 - composer install
-before_deploy: ./before_deploy.sh
+before_deploy: ./deploy.sh
 deploy:
   skip_cleanup: true
   provider: elasticbeanstalk
