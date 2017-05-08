@@ -1,5 +1,6 @@
 #!/bin/bash
-set -ev
+
+#set -ev
 
 echo 'getting ready to deploy'
 pwd
