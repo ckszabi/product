@@ -25,8 +25,8 @@ deploy:
     bucket: "travis-deploy-awstest"
     zip_file: "deploy_package.zip"
     region: eu-west-1
-    app: Product
-    env: Custom-env
+    app: awstest
+    env: Custom-env-1
     bucket_name: "travis-deploy-awstest"
     on:
       repo: ckszabi/product
