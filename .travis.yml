@@ -13,7 +13,7 @@ install:
 after_success: ./after_success.sh
 
 before_deploy:
-  - DATE=`date`;export ELASTIC_BEANSTALK_LABEL="${DATE//[^a-zA-Z0-9]/_}";
+  - #DATE=`date`;export ELASTIC_BEANSTALK_LABEL="${DATE//[^a-zA-Z0-9]/_}";
   - echo "Version label is '$ELASTIC_BEANSTALK_LABEL'"
   - ./before_deploy.sh
 
