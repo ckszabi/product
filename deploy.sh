@@ -3,4 +3,4 @@ set -ev
 
 echo 'getting ready to deploy'
 pwd
-zip -r deploy_package.zip . -x ".git/*" -x "vendor/*"
+zip -r deploy_package.zip . -x "*/.git/*" -x "vendor/*"
