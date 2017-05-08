@@ -6,8 +6,8 @@ cache:
   - vendor
 install:
 - composer install
-after_success: ./deploy.sh
-#before_deploy: ./deploy.sh
+after_success: ./after_success.sh
+before_deploy: ./before_deploy.sh
 deploy:
   skip_cleanup: true
   provider: elasticbeanstalk
