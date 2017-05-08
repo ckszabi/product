@@ -5,7 +5,7 @@ echo 'getting ready to deploy'
 pwd
 echo $ELASTIC_BEANSTALK_LABEL
 
-export ELASTIC_BEANSTALK_LABEL='commit: $(git rev-parse HEAD)';
+export ELASTIC_BEANSTALK_LABEL="commit_$(git rev-parse HEAD)";
 echo $ELASTIC_BEANSTALK_LABEL
 
 export ELASTIC_BEANSTALK_DESCRIPTION="abc";
