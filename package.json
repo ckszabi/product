@@ -1,0 +1,22 @@
+{
+  "name": "product",
+  "version": "1.1.0",
+  "description": "the main product, mimicking mobileticket",
+  "main": "index.html",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckszabi/product.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ckszabi/product/issues"
+  },
+  "homepage": "https://github.com/ckszabi/product#readme"
+}
