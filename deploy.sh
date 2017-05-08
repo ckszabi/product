@@ -2,7 +2,5 @@
 set -ev
 
 echo 'getting ready to deploy'
-cp config config_ -r
-cd config_
-rm .git -r
-ls -al
+pwd
+zip -r deploy_package.zip . -x ".git/*" -x "*/.git/*" -x "vendor/*"
