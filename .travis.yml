@@ -4,7 +4,6 @@ php:
 cache:
   directories:
   - vendor
-  - $HOME/.m2
 install:
 - composer install
 after_success: ./deploy.sh
