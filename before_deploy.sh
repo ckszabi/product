@@ -1,6 +1,9 @@
 #!/bin/bash
 echo 'getting ready to deploy'
-export ELASTIC_BEANSTALK_LABEL="commit_$(git rev-parse HEAD)_job_$TRAVIS_JOB_ID";
+
+PACKAGE_VERSION=$(node -p -e "require('./package.json').version")
+
+export ELASTIC_BEANSTALK_LABEL="$PACKAGE_VERSION_commit_$(git rev-parse HEAD)_job_$TRAVIS_JOB_ID";
 
 #export ELASTIC_BEANSTALK_DESCRIPTION="abc";
 #echo $ELASTIC_BEANSTALK_DESCRIPTION
