@@ -15,7 +15,7 @@ after_success: ./after_success.sh
 before_deploy:
   - export ELASTIC_BEANSTALK_LABEL="1234567";
   - echo "Version label is before '$ELASTIC_BEANSTALK_LABEL'"
-  - ./before_deploy.sh
+  - source ./before_deploy.sh
   - echo "Version label is after '$ELASTIC_BEANSTALK_LABEL'"
 
 deploy:
