@@ -10,8 +10,8 @@ cache:
 install:
   - composer install
 
-script:
-  - source ./build/script.sh
+before_script:
+  - source ./build/before_script.sh
 
 after_success: ./after_success.sh
 
