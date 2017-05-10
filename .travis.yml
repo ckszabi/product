@@ -8,7 +8,10 @@ cache:
   - vendor
 
 install:
-- composer install
+  - composer install
+
+script:
+  - source ./build/script.sh
 
 after_success: ./after_success.sh
 
