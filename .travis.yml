@@ -3,6 +3,10 @@ language: php
 php:
 - '5.6'
 
+env:
+  - FOO=foo BAR=bar
+  - FOO=bar BAR=foo
+
 cache:
   directories:
   - vendor
