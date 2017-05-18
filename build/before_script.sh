@@ -1,9 +1,19 @@
 #!/bin/bash
 
-echo "config branch: $config_branch"
+# store current path for later
+OLDPATH=$(pwd) 
+
+#require CONFIG_BRANCH
+if [ "x$CONFIG_BRANCH" == "x" ] ; then
+    echo "CONFIG_BRANCH not defined"
+    exit 1
+fi
+
+# using the given config branch
+echo "config branch: $CONFIG_BRANCH"
 
 cd config
-git checkout $config_branch
+git checkout $CONFIG_BRANCH
 
-# cd back to the root directory
-cd ..
+# restore initial path before finish
+cd ${OLDPATH}
