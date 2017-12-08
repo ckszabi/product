@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ckszabi/product/issues"
   },
-  "homepage": "https://github.com/ckszabi/product#readme"
+  "homepage": "https://github.com/ckszabi/product#readme",
+  "dependencies": {
+    "webdriverio": "^4.9.11"
+  }
 }
