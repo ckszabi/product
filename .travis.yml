@@ -12,6 +12,9 @@ cache:
   directories:
   - vendor
 
+before_install:
+  - source ./build/before_install.sh
+
 install:
   - source ./build/install.sh
   
