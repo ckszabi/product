@@ -1,5 +1,4 @@
-composer install
-
+#In a before_install step, you can install additional dependencies required by your project such as Ubuntu packages or custom services.
 
   # set up python and it's package manager
 sudo apt-get update 
