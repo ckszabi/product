@@ -11,6 +11,6 @@ var options = {
 webdriverio
   .remote(options)
   .init()
-  .url('http://localhost')
+  .url('http://172.17.0.3')
   .saveScreenshot('screenshots/screen-' + process.env.EID + '.png') 
   .end();
