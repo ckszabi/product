@@ -1,8 +1,8 @@
+#!/bin/bash
+
 #In a before_install step, you can install additional dependencies required by your project such as Ubuntu packages or custom services.
 
-  # set up python and it's package manager
-
-
+# set up python and it's package manager
 #sudo apt-get update 
 #sudo apt-get install -y python3 python3-pip
 
