@@ -9,4 +9,4 @@ pytest
 node -v
 npm -v
 npm install
-EID=${execution.id} node selenium.js
+EID=${TRAVIS_JOB_NUMBER} node selenium.js
