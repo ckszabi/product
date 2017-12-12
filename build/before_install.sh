@@ -6,6 +6,10 @@
 #sudo apt-get update 
 #sudo apt-get install -y python3 python3-pip
 
+python -V
+python3 -V
+pip3 -V
+pip -V
 
 pip install -U pytest
   # install nodejs and it's package manager
