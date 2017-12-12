@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# getting versions
 python3 -V
 pip3 -V
 pytest --version
