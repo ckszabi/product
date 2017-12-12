@@ -9,11 +9,11 @@ sudo apt-get install -y python3
 
 python -V
 python3 -V
-pip3 -V
+pip3.5 -V
 pip -V
 pytest -V
 
-pip install -U pytest
+pip3.5 install -U pytest
   # install nodejs and it's package manager
   #apt-get install -y gnupg
   #curl -sL https://deb.nodesource.com/setup_6.x | bash -
