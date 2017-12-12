@@ -1,7 +1,7 @@
-language: php
+language: python
 
-php:
-  - '5.6'
+python:
+  - "3.6"
 
 env:
   matrix:
@@ -22,17 +22,7 @@ before_script:
   - source ./build/before_script.sh
   
 script:
-  - phpunit
-  # check python and run pytest
-  - python3 -V
-  - pip3 -V
-  - pytest --version
-  - pytest
-  # check node and start node test
-  - node -v
-  - npm -v
-  - npm install
-  - EID=${execution.id} node selenium.js
+  - source ./build/script.sh
 
 after_success: ./after_success.sh
 
