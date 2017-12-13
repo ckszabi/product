@@ -9,8 +9,11 @@ class TestTest():
         
         options = webdriver.ChromeOptions()
         options.binary_location = '/usr/bin/google-chrome-stable'
+        options.set_headless(true);
+        options.add_argument("--disable-gpu");
         #service_log_path = "{}/chromedriver.log".format(outputdir)
         #service_args = ['--verbose']
+        
         driver = webdriver.Chrome(chromedriver, chrome_options=options)
         
         driver.implicitly_wait(3)
