@@ -4,7 +4,7 @@ from selenium import webdriver
 class TestTest():
 
     def test_test(self):
-        chromedriver = "~/chromedriver"
+        chromedriver = "/home/travis/chromedriver"
         os.environ["webdriver.chrome.driver"] = chromedriver
         driver = webdriver.Chrome(chromedriver)
         
