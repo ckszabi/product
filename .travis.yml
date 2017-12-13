@@ -18,7 +18,6 @@ cache:
 
 before_install:
   - source ./build/before_install.sh
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 install:
   - source ./build/install.sh
