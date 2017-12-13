@@ -15,7 +15,7 @@ pytest --version
 
 
 echo "starting pytest..."
-pytest test_sample.py
+pytest
 
 
 
