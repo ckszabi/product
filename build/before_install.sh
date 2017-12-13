@@ -13,6 +13,8 @@ google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http:
 #pip3.5 -V
 #pip -V
 #pytest -V
+pip install selenium -U
+
 
 #pip3.5 install -U pytest
   # install nodejs and it's package manager
