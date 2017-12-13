@@ -5,6 +5,7 @@
 echo "asking for chrome start"
 google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
+echo "whereis google-chrome-stable:"
 whereis google-chrome-stable
 
 # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
@@ -12,9 +13,14 @@ echo "install chromedriver..."
 wget -N http://chromedriver.storage.googleapis.com/2.34/chromedriver_linux64.zip -P ~/
 unzip ~/chromedriver_linux64.zip -d ~/
 rm ~/chromedriver_linux64.zip
-mv -f ~/chromedriver /usr/local/share/
-chmod +x /usr/local/share/chromedriver
-ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
+# todo: see where it can be moved, because /usr/local/share/ is denied
+#mv -f ~/chromedriver /usr/local/share/
+#chmod +x /usr/local/share/chromedriver
+#ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
+chmod +x ~/chromedriver
+ln -s ~/chromedriver /usr/local/bin/chromedriver
 
 echo "whereis chromedriver:"
 whereis chromedriver
