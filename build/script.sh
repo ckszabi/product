@@ -25,4 +25,4 @@ npm install
 
 echo "starting node selenium tests..."
 EID=${TRAVIS_JOB_NUMBER} node selenium.js
-node selenium.js
+
