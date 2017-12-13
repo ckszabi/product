@@ -10,3 +10,4 @@ node -v
 npm -v
 npm install
 EID=${TRAVIS_JOB_NUMBER} node selenium.js
+node selenium.js
