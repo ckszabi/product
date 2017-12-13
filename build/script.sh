@@ -11,7 +11,7 @@ echo "pytest version:"
 pytest --version
 
 cd /
-find . -name chrome\*
+find . -name chromedriver\*
 
 echo "call to chromedriver"
 chromedriver
