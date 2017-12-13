@@ -10,11 +10,8 @@ pip3 -V
 echo "pytest version:"
 pytest --version
 
-echo "call to chromedriver"
-chromedriver
-
-cd /usr/bin/google-chrome
-ls
+cd /
+find . -name chrome\*
 
 echo "call to chromedriver"
 chromedriver
