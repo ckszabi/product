@@ -24,6 +24,7 @@ sudo ln -s ~/chromedriver /usr/local/bin/chromedriver
 
 echo "whereis chromedriver:"
 whereis chromedriver
+chromedriver
 
 # set up python and it's package manager
 #sudo apt-get update 
