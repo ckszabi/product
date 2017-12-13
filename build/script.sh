@@ -15,7 +15,7 @@ echo "call to chromedriver"
 
 
 echo "starting pytest..."
-pytest
+pytest test_sample.py
 
 
 
