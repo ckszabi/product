@@ -6,7 +6,12 @@ class TestTest():
     def test_test(self):
         chromedriver = "/home/travis/chromedriver"
         os.environ["webdriver.chrome.driver"] = chromedriver
-        driver = webdriver.Chrome(chromedriver)
+        
+        options = webdriver.ChromeOptions()
+        options.binary_location = '/usr/bin/google-chrome-stable'
+        #service_log_path = "{}/chromedriver.log".format(outputdir)
+        #service_args = ['--verbose']
+        driver = webdriver.Chrome(chromedriver, chrome_options=options)
         
         driver.implicitly_wait(3)
         driver.get("http://staging.togital.no/konkurrenten/")
