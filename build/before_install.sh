@@ -5,6 +5,20 @@
 echo "asking for chrome start"
 google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
+whereis google-chrome-stable
+
+# Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
+echo "install chromedriver..."
+wget -N http://chromedriver.storage.googleapis.com/2.34/chromedriver_linux64.zip -P ~/
+unzip ~/chromedriver_linux64.zip -d ~/
+rm ~/chromedriver_linux64.zip
+sudo mv -f ~/chromedriver /usr/local/share/
+sudo chmod +x /usr/local/share/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
+echo "whereis chromedriver:"
+whereis chromedriver
+
 # set up python and it's package manager
 #sudo apt-get update 
 #sudo apt-get install -y python3  python3-pip
