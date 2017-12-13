@@ -13,6 +13,12 @@ pytest --version
 echo "call to chromedriver"
 chromedriver
 
+cd /usr/bin/google-chrome
+ls
+
+echo "call to chromedriver"
+chromedriver
+
 
 echo "starting pytest..."
 pytest
