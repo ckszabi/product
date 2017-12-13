@@ -13,16 +13,23 @@ pytest --version
 echo "starting pytest..."
 pytest
 
+
+
+
+
+
+
+
 # check node and start node test
-echo "node version:"
-node -v
+#echo "node version:"
+#node -v
 
-echo "npm version:"
-npm -v
+#echo "npm version:"
+#npm -v
 
-echo "installing node dependencies"
-npm install
+#echo "installing node dependencies"
+#npm install
 
-echo "starting node selenium tests..."
-EID=${TRAVIS_JOB_NUMBER} node selenium.js
+#echo "starting node selenium tests..."
+#EID=${TRAVIS_JOB_NUMBER} node selenium.js
 
