@@ -17,4 +17,7 @@ webdriverio
   .init()
   .url('http://localhost')
   .saveScreenshot('screenshots/screen-' + process.env.EID + '.png') 
-  .end();
+  .end()
+  .catch(function(err) {
+        console.log(err);
+  });
