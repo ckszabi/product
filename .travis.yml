@@ -28,6 +28,7 @@ after_success: ./after_success.sh
 
 before_deploy:
   - source ./before_deploy.sh
+  - node selenium.js
 
 deploy:
   - provider: elasticbeanstalk
