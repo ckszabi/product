@@ -2,8 +2,8 @@
 
 #In a before_install step, you can install additional dependencies required by your project such as Ubuntu packages or custom services.
 
-echo "asking for chrome start"
-google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+#echo "asking for chrome start"
+#google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 echo "whereis google-chrome-stable:"
 whereis google-chrome-stable
