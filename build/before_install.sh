@@ -20,7 +20,7 @@ rm ~/chromedriver_linux64.zip
 #ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
 chmod +x ~/chromedriver
-ln -s ~/chromedriver /usr/local/bin/chromedriver
+sudo ln -s ~/chromedriver /usr/local/bin/chromedriver
 
 echo "whereis chromedriver:"
 whereis chromedriver
