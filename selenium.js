@@ -1,12 +1,16 @@
 var webdriverio = require('webdriverio');
 
+console.log('webdriverio', webdriverio);
+
 var options = {
     desiredCapabilities: {
         browserName: 'chrome'
-    },
-	host: 'selenium-ch',
-	port: 4444
+    }	
 };
+
+console.log('options', options);
+
+console.log('connecting webdriver');
 
 webdriverio
   .remote(options)
