@@ -2,6 +2,7 @@
 
 #In a before_install step, you can install additional dependencies required by your project such as Ubuntu packages or custom services.
 
+echo "asking for chrome start"
 google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 # set up python and it's package manager
