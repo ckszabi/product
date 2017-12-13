@@ -22,9 +22,9 @@ rm ~/chromedriver_linux64.zip
 chmod +x ~/chromedriver
 sudo ln -s ~/chromedriver /usr/local/bin/chromedriver
 
-echo "whereis chromedriver:"
-whereis chromedriver
-~/chromedriver
+#echo "whereis chromedriver:"
+#whereis chromedriver
+#~/chromedriver
 
 # set up python and it's package manager
 #sudo apt-get update 
