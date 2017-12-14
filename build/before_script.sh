@@ -13,6 +13,8 @@ fi
 echo "config branch: $CONFIG_BRANCH"
 
 cd config
+echo "current path: "
+pwd
 git checkout $CONFIG_BRANCH
 
 # restore initial path before finish

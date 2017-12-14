@@ -11,3 +11,4 @@
 	 echo '$config is not set';
  }
  
+echo ' from selenium branch';

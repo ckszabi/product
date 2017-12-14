@@ -1,7 +1,11 @@
-language: php
+dist: trusty
+language: python
 
-php:
-- '5.6'
+python:
+  - "3.6"
+  
+addons:
+  chrome: stable
 
 env:
   matrix:
@@ -12,16 +16,23 @@ cache:
   directories:
   - vendor
 
-install:
-  - composer install
+before_install:
+  - source ./build/before_install.sh
 
+install:
+  - source ./build/install.sh
+  
 before_script:
   - source ./build/before_script.sh
+  
+script:
+  - source ./build/script.sh
 
 after_success: ./after_success.sh
 
 before_deploy:
   - source ./before_deploy.sh
+  - node selenium.js
 
 deploy:
   - provider: elasticbeanstalk
