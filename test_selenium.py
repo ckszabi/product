@@ -15,7 +15,10 @@ class TestTest():
         #service_args = ['--verbose']
         
         #driver = webdriver.Chrome(chromedriver, chrome_options=options)
-        driver = webdriver.Chrome()
+        driver = webdriver.Remote(
+            command_executor='http://selenium-ch:4444/wd/hub',
+            desired_capabilities=DesiredCapabilities.CHROME)
+        #driver = webdriver.Chrome()
         
         driver.implicitly_wait(3)
         driver.get("http://staging.togital.no/konkurrenten/")
