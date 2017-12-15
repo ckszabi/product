@@ -1,4 +1,7 @@
 [submodule "testing-framework"]
 	path = testing-framework
 	url = https://github.com/ckszabi/testing-framework.git
+[submodule "config"]
+	path = config
+	url = https://github.com/ckszabi/aws_config_test.git
 
